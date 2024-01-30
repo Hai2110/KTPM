@@ -138,8 +138,6 @@
             txbIDBill = new TextBox();
             label19 = new Label();
             dtgvBill = new DataGridView();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             tpCus = new TabPage();
             dtgvCus = new DataGridView();
             panel35 = new Panel();
@@ -151,7 +149,17 @@
             btnDeleteCus = new Button();
             btnAddCus = new Button();
             panel37 = new Panel();
+            panel43 = new Panel();
+            txbMailCus = new TextBox();
+            label25 = new Label();
+            panel42 = new Panel();
+            txbPhoneCus = new TextBox();
+            label24 = new Label();
+            panel41 = new Panel();
+            txbDCCus = new TextBox();
+            label23 = new Label();
             panel38 = new Panel();
+            dtpNTNSCus = new DateTimePicker();
             label20 = new Label();
             panel39 = new Panel();
             txbNameCus = new TextBox();
@@ -159,16 +167,6 @@
             panel40 = new Panel();
             txbIDCus = new TextBox();
             label22 = new Label();
-            dtpNTNSCus = new DateTimePicker();
-            panel41 = new Panel();
-            txbDCCus = new TextBox();
-            label23 = new Label();
-            panel42 = new Panel();
-            txbPhoneCus = new TextBox();
-            label24 = new Label();
-            panel43 = new Panel();
-            txbMailCus = new TextBox();
-            label25 = new Label();
             tpCar = new TabPage();
             panel44 = new Panel();
             txbSearchCar = new TextBox();
@@ -179,7 +177,20 @@
             btnDeleteCar = new Button();
             btnAddCar = new Button();
             panel46 = new Panel();
+            panel53 = new Panel();
+            txbTTCar = new TextBox();
+            label32 = new Label();
+            panel52 = new Panel();
+            txbLSCar = new TextBox();
+            label31 = new Label();
+            panel51 = new Panel();
+            txbNamSXCar = new TextBox();
+            label30 = new Label();
+            panel50 = new Panel();
+            txbMauCar = new TextBox();
+            label29 = new Label();
             panel47 = new Panel();
+            txbHangCar = new TextBox();
             label26 = new Label();
             panel48 = new Panel();
             txbNameCar = new TextBox();
@@ -188,19 +199,6 @@
             txbIDCar = new TextBox();
             label28 = new Label();
             dtgvCar = new DataGridView();
-            txbHangCar = new TextBox();
-            panel50 = new Panel();
-            txbMauCar = new TextBox();
-            label29 = new Label();
-            panel51 = new Panel();
-            txbNamSXCar = new TextBox();
-            label30 = new Label();
-            panel52 = new Panel();
-            txbLSCar = new TextBox();
-            label31 = new Label();
-            panel53 = new Panel();
-            txbTTCar = new TextBox();
-            label32 = new Label();
             tpNV = new TabPage();
             panel54 = new Panel();
             btnShowSV = new Button();
@@ -212,6 +210,9 @@
             txbSearchNV = new TextBox();
             btnSearchNV = new Button();
             panel56 = new Panel();
+            panel62 = new Panel();
+            txbNameNV = new TextBox();
+            label38 = new Label();
             panel57 = new Panel();
             txbMailNV = new TextBox();
             label33 = new Label();
@@ -227,9 +228,6 @@
             panel61 = new Panel();
             txbIDNV = new TextBox();
             label37 = new Label();
-            panel62 = new Panel();
-            txbNameNV = new TextBox();
-            label38 = new Label();
             tgPT = new TabPage();
             dtgvPT = new DataGridView();
             panel63 = new Panel();
@@ -241,7 +239,17 @@
             btnDeletePT = new Button();
             btnAddPT = new Button();
             panel65 = new Panel();
+            panel71 = new Panel();
+            nmSLTKPT = new NumericUpDown();
+            label44 = new Label();
+            panel70 = new Panel();
+            nmGNPT = new NumericUpDown();
+            label43 = new Label();
+            panel69 = new Panel();
+            txbNCCPT = new TextBox();
+            label42 = new Label();
             panel66 = new Panel();
+            txbHangPT = new TextBox();
             label39 = new Label();
             panel67 = new Panel();
             txbNamePT = new TextBox();
@@ -249,16 +257,6 @@
             panel68 = new Panel();
             txbIDPT = new TextBox();
             label41 = new Label();
-            txbHangPT = new TextBox();
-            panel69 = new Panel();
-            txbNCCPT = new TextBox();
-            label42 = new Label();
-            panel70 = new Panel();
-            label43 = new Label();
-            nmGNPT = new NumericUpDown();
-            panel71 = new Panel();
-            label44 = new Label();
-            nmSLTKPT = new NumericUpDown();
             tgQL = new TabPage();
             panel72 = new Panel();
             txbSearchQL = new TextBox();
@@ -288,6 +286,8 @@
             panel80 = new Panel();
             txbIDQL = new TextBox();
             label50 = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             tcAdmi.SuspendLayout();
             tpRev.SuspendLayout();
             panel4.SuspendLayout();
@@ -342,48 +342,48 @@
             panel35.SuspendLayout();
             panel36.SuspendLayout();
             panel37.SuspendLayout();
+            panel43.SuspendLayout();
+            panel42.SuspendLayout();
+            panel41.SuspendLayout();
             panel38.SuspendLayout();
             panel39.SuspendLayout();
             panel40.SuspendLayout();
-            panel41.SuspendLayout();
-            panel42.SuspendLayout();
-            panel43.SuspendLayout();
             tpCar.SuspendLayout();
             panel44.SuspendLayout();
             panel45.SuspendLayout();
             panel46.SuspendLayout();
+            panel53.SuspendLayout();
+            panel52.SuspendLayout();
+            panel51.SuspendLayout();
+            panel50.SuspendLayout();
             panel47.SuspendLayout();
             panel48.SuspendLayout();
             panel49.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgvCar).BeginInit();
-            panel50.SuspendLayout();
-            panel51.SuspendLayout();
-            panel52.SuspendLayout();
-            panel53.SuspendLayout();
             tpNV.SuspendLayout();
             panel54.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgvNV).BeginInit();
             panel55.SuspendLayout();
             panel56.SuspendLayout();
+            panel62.SuspendLayout();
             panel57.SuspendLayout();
             panel58.SuspendLayout();
             panel59.SuspendLayout();
             panel60.SuspendLayout();
             panel61.SuspendLayout();
-            panel62.SuspendLayout();
             tgPT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgvPT).BeginInit();
             panel63.SuspendLayout();
             panel64.SuspendLayout();
             panel65.SuspendLayout();
+            panel71.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)nmSLTKPT).BeginInit();
+            panel70.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)nmGNPT).BeginInit();
+            panel69.SuspendLayout();
             panel66.SuspendLayout();
             panel67.SuspendLayout();
             panel68.SuspendLayout();
-            panel69.SuspendLayout();
-            panel70.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)nmGNPT).BeginInit();
-            panel71.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)nmSLTKPT).BeginInit();
             tgQL.SuspendLayout();
             panel72.SuspendLayout();
             panel73.SuspendLayout();
@@ -476,6 +476,7 @@
             dtgvRev.RowHeadersWidth = 51;
             dtgvRev.Size = new Size(796, 433);
             dtgvRev.TabIndex = 1;
+            dtgvRev.CellContentClick += dtgvRev_CellContentClick;
             // 
             // tpSer
             // 
@@ -1521,6 +1522,84 @@
             panel37.Size = new Size(362, 418);
             panel37.TabIndex = 5;
             // 
+            // panel43
+            // 
+            panel43.Controls.Add(txbMailCus);
+            panel43.Controls.Add(label25);
+            panel43.Location = new Point(3, 349);
+            panel43.Name = "panel43";
+            panel43.Size = new Size(356, 61);
+            panel43.TabIndex = 6;
+            // 
+            // txbMailCus
+            // 
+            txbMailCus.Location = new Point(104, 22);
+            txbMailCus.Name = "txbMailCus";
+            txbMailCus.Size = new Size(241, 27);
+            txbMailCus.TabIndex = 1;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label25.Location = new Point(17, 25);
+            label25.Name = "label25";
+            label25.Size = new Size(68, 24);
+            label25.TabIndex = 0;
+            label25.Text = "Email:";
+            // 
+            // panel42
+            // 
+            panel42.Controls.Add(txbPhoneCus);
+            panel42.Controls.Add(label24);
+            panel42.Location = new Point(3, 282);
+            panel42.Name = "panel42";
+            panel42.Size = new Size(356, 61);
+            panel42.TabIndex = 5;
+            // 
+            // txbPhoneCus
+            // 
+            txbPhoneCus.Location = new Point(104, 22);
+            txbPhoneCus.Name = "txbPhoneCus";
+            txbPhoneCus.Size = new Size(241, 27);
+            txbPhoneCus.TabIndex = 1;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label24.Location = new Point(17, 25);
+            label24.Name = "label24";
+            label24.Size = new Size(55, 24);
+            label24.TabIndex = 0;
+            label24.Text = "SĐT:";
+            // 
+            // panel41
+            // 
+            panel41.Controls.Add(txbDCCus);
+            panel41.Controls.Add(label23);
+            panel41.Location = new Point(3, 215);
+            panel41.Name = "panel41";
+            panel41.Size = new Size(356, 61);
+            panel41.TabIndex = 4;
+            // 
+            // txbDCCus
+            // 
+            txbDCCus.Location = new Point(104, 22);
+            txbDCCus.Name = "txbDCCus";
+            txbDCCus.Size = new Size(241, 27);
+            txbDCCus.TabIndex = 1;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label23.Location = new Point(17, 25);
+            label23.Name = "label23";
+            label23.Size = new Size(81, 24);
+            label23.TabIndex = 0;
+            label23.Text = "Địa chỉ:";
+            // 
             // panel38
             // 
             panel38.Controls.Add(dtpNTNSCus);
@@ -1529,6 +1608,13 @@
             panel38.Name = "panel38";
             panel38.Size = new Size(356, 61);
             panel38.TabIndex = 3;
+            // 
+            // dtpNTNSCus
+            // 
+            dtpNTNSCus.Location = new Point(104, 22);
+            dtpNTNSCus.Name = "dtpNTNSCus";
+            dtpNTNSCus.Size = new Size(241, 27);
+            dtpNTNSCus.TabIndex = 1;
             // 
             // label20
             // 
@@ -1592,91 +1678,6 @@
             label22.Size = new Size(36, 24);
             label22.TabIndex = 0;
             label22.Text = "ID:";
-            // 
-            // dtpNTNSCus
-            // 
-            dtpNTNSCus.Location = new Point(104, 22);
-            dtpNTNSCus.Name = "dtpNTNSCus";
-            dtpNTNSCus.Size = new Size(241, 27);
-            dtpNTNSCus.TabIndex = 1;
-            // 
-            // panel41
-            // 
-            panel41.Controls.Add(txbDCCus);
-            panel41.Controls.Add(label23);
-            panel41.Location = new Point(3, 215);
-            panel41.Name = "panel41";
-            panel41.Size = new Size(356, 61);
-            panel41.TabIndex = 4;
-            // 
-            // txbDCCus
-            // 
-            txbDCCus.Location = new Point(104, 22);
-            txbDCCus.Name = "txbDCCus";
-            txbDCCus.Size = new Size(241, 27);
-            txbDCCus.TabIndex = 1;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label23.Location = new Point(17, 25);
-            label23.Name = "label23";
-            label23.Size = new Size(81, 24);
-            label23.TabIndex = 0;
-            label23.Text = "Địa chỉ:";
-            // 
-            // panel42
-            // 
-            panel42.Controls.Add(txbPhoneCus);
-            panel42.Controls.Add(label24);
-            panel42.Location = new Point(3, 282);
-            panel42.Name = "panel42";
-            panel42.Size = new Size(356, 61);
-            panel42.TabIndex = 5;
-            // 
-            // txbPhoneCus
-            // 
-            txbPhoneCus.Location = new Point(104, 22);
-            txbPhoneCus.Name = "txbPhoneCus";
-            txbPhoneCus.Size = new Size(241, 27);
-            txbPhoneCus.TabIndex = 1;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label24.Location = new Point(17, 25);
-            label24.Name = "label24";
-            label24.Size = new Size(55, 24);
-            label24.TabIndex = 0;
-            label24.Text = "SĐT:";
-            // 
-            // panel43
-            // 
-            panel43.Controls.Add(txbMailCus);
-            panel43.Controls.Add(label25);
-            panel43.Location = new Point(3, 349);
-            panel43.Name = "panel43";
-            panel43.Size = new Size(356, 61);
-            panel43.TabIndex = 6;
-            // 
-            // txbMailCus
-            // 
-            txbMailCus.Location = new Point(104, 22);
-            txbMailCus.Name = "txbMailCus";
-            txbMailCus.Size = new Size(241, 27);
-            txbMailCus.TabIndex = 1;
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label25.Location = new Point(17, 25);
-            label25.Name = "label25";
-            label25.Size = new Size(68, 24);
-            label25.TabIndex = 0;
-            label25.Text = "Email:";
             // 
             // tpCar
             // 
@@ -1778,6 +1779,110 @@
             panel46.Size = new Size(362, 418);
             panel46.TabIndex = 5;
             // 
+            // panel53
+            // 
+            panel53.Controls.Add(txbTTCar);
+            panel53.Controls.Add(label32);
+            panel53.Location = new Point(3, 352);
+            panel53.Name = "panel53";
+            panel53.Size = new Size(356, 49);
+            panel53.TabIndex = 7;
+            // 
+            // txbTTCar
+            // 
+            txbTTCar.Location = new Point(126, 11);
+            txbTTCar.Name = "txbTTCar";
+            txbTTCar.Size = new Size(219, 27);
+            txbTTCar.TabIndex = 2;
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label32.Location = new Point(14, 15);
+            label32.Name = "label32";
+            label32.Size = new Size(96, 19);
+            label32.TabIndex = 0;
+            label32.Text = "TÌnh trạng:";
+            // 
+            // panel52
+            // 
+            panel52.Controls.Add(txbLSCar);
+            panel52.Controls.Add(label31);
+            panel52.Location = new Point(3, 280);
+            panel52.Name = "panel52";
+            panel52.Size = new Size(356, 66);
+            panel52.TabIndex = 6;
+            // 
+            // txbLSCar
+            // 
+            txbLSCar.Location = new Point(126, 11);
+            txbLSCar.Name = "txbLSCar";
+            txbLSCar.Size = new Size(219, 27);
+            txbLSCar.TabIndex = 2;
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label31.Location = new Point(3, 15);
+            label31.Name = "label31";
+            label31.Size = new Size(117, 38);
+            label31.TabIndex = 0;
+            label31.Text = "Lịch sử sử\r\ndụng dịch vụ:\r\n";
+            // 
+            // panel51
+            // 
+            panel51.Controls.Add(txbNamSXCar);
+            panel51.Controls.Add(label30);
+            panel51.Location = new Point(3, 225);
+            panel51.Name = "panel51";
+            panel51.Size = new Size(356, 49);
+            panel51.TabIndex = 5;
+            // 
+            // txbNamSXCar
+            // 
+            txbNamSXCar.Location = new Point(126, 11);
+            txbNamSXCar.Name = "txbNamSXCar";
+            txbNamSXCar.Size = new Size(219, 27);
+            txbNamSXCar.TabIndex = 2;
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label30.Location = new Point(14, 11);
+            label30.Name = "label30";
+            label30.Size = new Size(73, 19);
+            label30.TabIndex = 0;
+            label30.Text = "Năm sx:";
+            // 
+            // panel50
+            // 
+            panel50.Controls.Add(txbMauCar);
+            panel50.Controls.Add(label29);
+            panel50.Location = new Point(3, 170);
+            panel50.Name = "panel50";
+            panel50.Size = new Size(356, 49);
+            panel50.TabIndex = 4;
+            // 
+            // txbMauCar
+            // 
+            txbMauCar.Location = new Point(126, 11);
+            txbMauCar.Name = "txbMauCar";
+            txbMauCar.Size = new Size(219, 27);
+            txbMauCar.TabIndex = 2;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label29.Location = new Point(14, 11);
+            label29.Name = "label29";
+            label29.Size = new Size(47, 19);
+            label29.TabIndex = 0;
+            label29.Text = "Mẫu:";
+            // 
             // panel47
             // 
             panel47.Controls.Add(txbHangCar);
@@ -1786,6 +1891,13 @@
             panel47.Name = "panel47";
             panel47.Size = new Size(356, 49);
             panel47.TabIndex = 3;
+            // 
+            // txbHangCar
+            // 
+            txbHangCar.Location = new Point(126, 11);
+            txbHangCar.Name = "txbHangCar";
+            txbHangCar.Size = new Size(219, 27);
+            txbHangCar.TabIndex = 2;
             // 
             // label26
             // 
@@ -1858,117 +1970,6 @@
             dtgvCar.RowHeadersWidth = 51;
             dtgvCar.Size = new Size(434, 416);
             dtgvCar.TabIndex = 4;
-            // 
-            // txbHangCar
-            // 
-            txbHangCar.Location = new Point(126, 11);
-            txbHangCar.Name = "txbHangCar";
-            txbHangCar.Size = new Size(219, 27);
-            txbHangCar.TabIndex = 2;
-            // 
-            // panel50
-            // 
-            panel50.Controls.Add(txbMauCar);
-            panel50.Controls.Add(label29);
-            panel50.Location = new Point(3, 170);
-            panel50.Name = "panel50";
-            panel50.Size = new Size(356, 49);
-            panel50.TabIndex = 4;
-            // 
-            // txbMauCar
-            // 
-            txbMauCar.Location = new Point(126, 11);
-            txbMauCar.Name = "txbMauCar";
-            txbMauCar.Size = new Size(219, 27);
-            txbMauCar.TabIndex = 2;
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label29.Location = new Point(14, 11);
-            label29.Name = "label29";
-            label29.Size = new Size(47, 19);
-            label29.TabIndex = 0;
-            label29.Text = "Mẫu:";
-            // 
-            // panel51
-            // 
-            panel51.Controls.Add(txbNamSXCar);
-            panel51.Controls.Add(label30);
-            panel51.Location = new Point(3, 225);
-            panel51.Name = "panel51";
-            panel51.Size = new Size(356, 49);
-            panel51.TabIndex = 5;
-            // 
-            // txbNamSXCar
-            // 
-            txbNamSXCar.Location = new Point(126, 11);
-            txbNamSXCar.Name = "txbNamSXCar";
-            txbNamSXCar.Size = new Size(219, 27);
-            txbNamSXCar.TabIndex = 2;
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label30.Location = new Point(14, 11);
-            label30.Name = "label30";
-            label30.Size = new Size(73, 19);
-            label30.TabIndex = 0;
-            label30.Text = "Năm sx:";
-            // 
-            // panel52
-            // 
-            panel52.Controls.Add(txbLSCar);
-            panel52.Controls.Add(label31);
-            panel52.Location = new Point(3, 280);
-            panel52.Name = "panel52";
-            panel52.Size = new Size(356, 66);
-            panel52.TabIndex = 6;
-            // 
-            // txbLSCar
-            // 
-            txbLSCar.Location = new Point(126, 11);
-            txbLSCar.Name = "txbLSCar";
-            txbLSCar.Size = new Size(219, 27);
-            txbLSCar.TabIndex = 2;
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label31.Location = new Point(3, 15);
-            label31.Name = "label31";
-            label31.Size = new Size(117, 38);
-            label31.TabIndex = 0;
-            label31.Text = "Lịch sử sử\r\ndụng dịch vụ:\r\n";
-            // 
-            // panel53
-            // 
-            panel53.Controls.Add(txbTTCar);
-            panel53.Controls.Add(label32);
-            panel53.Location = new Point(3, 352);
-            panel53.Name = "panel53";
-            panel53.Size = new Size(356, 49);
-            panel53.TabIndex = 7;
-            // 
-            // txbTTCar
-            // 
-            txbTTCar.Location = new Point(126, 11);
-            txbTTCar.Name = "txbTTCar";
-            txbTTCar.Size = new Size(219, 27);
-            txbTTCar.TabIndex = 2;
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label32.Location = new Point(14, 15);
-            label32.Name = "label32";
-            label32.Size = new Size(96, 19);
-            label32.TabIndex = 0;
-            label32.Text = "TÌnh trạng:";
             // 
             // tpNV
             // 
@@ -2077,6 +2078,32 @@
             panel56.Name = "panel56";
             panel56.Size = new Size(362, 418);
             panel56.TabIndex = 5;
+            // 
+            // panel62
+            // 
+            panel62.Controls.Add(txbNameNV);
+            panel62.Controls.Add(label38);
+            panel62.Location = new Point(3, 78);
+            panel62.Name = "panel62";
+            panel62.Size = new Size(356, 61);
+            panel62.TabIndex = 12;
+            // 
+            // txbNameNV
+            // 
+            txbNameNV.Location = new Point(104, 22);
+            txbNameNV.Name = "txbNameNV";
+            txbNameNV.Size = new Size(241, 27);
+            txbNameNV.TabIndex = 1;
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label38.Location = new Point(17, 25);
+            label38.Name = "label38";
+            label38.Size = new Size(53, 24);
+            label38.TabIndex = 0;
+            label38.Text = "Tên:";
             // 
             // panel57
             // 
@@ -2209,32 +2236,6 @@
             label37.TabIndex = 0;
             label37.Text = "ID:";
             // 
-            // panel62
-            // 
-            panel62.Controls.Add(txbNameNV);
-            panel62.Controls.Add(label38);
-            panel62.Location = new Point(3, 78);
-            panel62.Name = "panel62";
-            panel62.Size = new Size(356, 61);
-            panel62.TabIndex = 12;
-            // 
-            // txbNameNV
-            // 
-            txbNameNV.Location = new Point(104, 22);
-            txbNameNV.Name = "txbNameNV";
-            txbNameNV.Size = new Size(241, 27);
-            txbNameNV.TabIndex = 1;
-            // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label38.Location = new Point(17, 25);
-            label38.Name = "label38";
-            label38.Size = new Size(53, 24);
-            label38.TabIndex = 0;
-            label38.Text = "Tên:";
-            // 
             // tgPT
             // 
             tgPT.Controls.Add(dtgvPT);
@@ -2343,6 +2344,85 @@
             panel65.Size = new Size(362, 418);
             panel65.TabIndex = 5;
             // 
+            // panel71
+            // 
+            panel71.Controls.Add(nmSLTKPT);
+            panel71.Controls.Add(label44);
+            panel71.Location = new Point(3, 349);
+            panel71.Name = "panel71";
+            panel71.Size = new Size(356, 61);
+            panel71.TabIndex = 6;
+            // 
+            // nmSLTKPT
+            // 
+            nmSLTKPT.Location = new Point(125, 22);
+            nmSLTKPT.Name = "nmSLTKPT";
+            nmSLTKPT.Size = new Size(220, 27);
+            nmSLTKPT.TabIndex = 2;
+            // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label44.Location = new Point(17, 1);
+            label44.Name = "label44";
+            label44.Size = new Size(98, 48);
+            label44.TabIndex = 0;
+            label44.Text = "Số lượng\r\ntồn kho:";
+            // 
+            // panel70
+            // 
+            panel70.Controls.Add(nmGNPT);
+            panel70.Controls.Add(label43);
+            panel70.Location = new Point(3, 282);
+            panel70.Name = "panel70";
+            panel70.Size = new Size(356, 61);
+            panel70.TabIndex = 5;
+            // 
+            // nmGNPT
+            // 
+            nmGNPT.Location = new Point(125, 22);
+            nmGNPT.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
+            nmGNPT.Name = "nmGNPT";
+            nmGNPT.Size = new Size(220, 27);
+            nmGNPT.TabIndex = 2;
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label43.Location = new Point(17, 25);
+            label43.Name = "label43";
+            label43.Size = new Size(102, 24);
+            label43.TabIndex = 0;
+            label43.Text = "Giá nhập:";
+            // 
+            // panel69
+            // 
+            panel69.Controls.Add(txbNCCPT);
+            panel69.Controls.Add(label42);
+            panel69.Location = new Point(3, 215);
+            panel69.Name = "panel69";
+            panel69.Size = new Size(356, 61);
+            panel69.TabIndex = 4;
+            // 
+            // txbNCCPT
+            // 
+            txbNCCPT.Location = new Point(125, 22);
+            txbNCCPT.Name = "txbNCCPT";
+            txbNCCPT.Size = new Size(220, 27);
+            txbNCCPT.TabIndex = 2;
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label42.Location = new Point(17, 25);
+            label42.Name = "label42";
+            label42.Size = new Size(82, 24);
+            label42.TabIndex = 0;
+            label42.Text = "Nhà cc:";
+            // 
             // panel66
             // 
             panel66.Controls.Add(txbHangPT);
@@ -2351,6 +2431,13 @@
             panel66.Name = "panel66";
             panel66.Size = new Size(356, 61);
             panel66.TabIndex = 3;
+            // 
+            // txbHangPT
+            // 
+            txbHangPT.Location = new Point(125, 22);
+            txbHangPT.Name = "txbHangPT";
+            txbHangPT.Size = new Size(220, 27);
+            txbHangPT.TabIndex = 2;
             // 
             // label39
             // 
@@ -2414,92 +2501,6 @@
             label41.Size = new Size(36, 24);
             label41.TabIndex = 0;
             label41.Text = "ID:";
-            // 
-            // txbHangPT
-            // 
-            txbHangPT.Location = new Point(125, 22);
-            txbHangPT.Name = "txbHangPT";
-            txbHangPT.Size = new Size(220, 27);
-            txbHangPT.TabIndex = 2;
-            // 
-            // panel69
-            // 
-            panel69.Controls.Add(txbNCCPT);
-            panel69.Controls.Add(label42);
-            panel69.Location = new Point(3, 215);
-            panel69.Name = "panel69";
-            panel69.Size = new Size(356, 61);
-            panel69.TabIndex = 4;
-            // 
-            // txbNCCPT
-            // 
-            txbNCCPT.Location = new Point(125, 22);
-            txbNCCPT.Name = "txbNCCPT";
-            txbNCCPT.Size = new Size(220, 27);
-            txbNCCPT.TabIndex = 2;
-            // 
-            // label42
-            // 
-            label42.AutoSize = true;
-            label42.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label42.Location = new Point(17, 25);
-            label42.Name = "label42";
-            label42.Size = new Size(82, 24);
-            label42.TabIndex = 0;
-            label42.Text = "Nhà cc:";
-            // 
-            // panel70
-            // 
-            panel70.Controls.Add(nmGNPT);
-            panel70.Controls.Add(label43);
-            panel70.Location = new Point(3, 282);
-            panel70.Name = "panel70";
-            panel70.Size = new Size(356, 61);
-            panel70.TabIndex = 5;
-            // 
-            // label43
-            // 
-            label43.AutoSize = true;
-            label43.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label43.Location = new Point(17, 25);
-            label43.Name = "label43";
-            label43.Size = new Size(102, 24);
-            label43.TabIndex = 0;
-            label43.Text = "Giá nhập:";
-            // 
-            // nmGNPT
-            // 
-            nmGNPT.Location = new Point(125, 22);
-            nmGNPT.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
-            nmGNPT.Name = "nmGNPT";
-            nmGNPT.Size = new Size(220, 27);
-            nmGNPT.TabIndex = 2;
-            // 
-            // panel71
-            // 
-            panel71.Controls.Add(nmSLTKPT);
-            panel71.Controls.Add(label44);
-            panel71.Location = new Point(3, 349);
-            panel71.Name = "panel71";
-            panel71.Size = new Size(356, 61);
-            panel71.TabIndex = 6;
-            // 
-            // label44
-            // 
-            label44.AutoSize = true;
-            label44.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label44.Location = new Point(17, 1);
-            label44.Name = "label44";
-            label44.Size = new Size(98, 48);
-            label44.TabIndex = 0;
-            label44.Text = "Số lượng\r\ntồn kho:";
-            // 
-            // nmSLTKPT
-            // 
-            nmSLTKPT.Location = new Point(125, 22);
-            nmSLTKPT.Name = "nmSLTKPT";
-            nmSLTKPT.Size = new Size(220, 27);
-            nmSLTKPT.TabIndex = 2;
             // 
             // tgQL
             // 
@@ -2852,23 +2853,31 @@
             panel35.PerformLayout();
             panel36.ResumeLayout(false);
             panel37.ResumeLayout(false);
+            panel43.ResumeLayout(false);
+            panel43.PerformLayout();
+            panel42.ResumeLayout(false);
+            panel42.PerformLayout();
+            panel41.ResumeLayout(false);
+            panel41.PerformLayout();
             panel38.ResumeLayout(false);
             panel38.PerformLayout();
             panel39.ResumeLayout(false);
             panel39.PerformLayout();
             panel40.ResumeLayout(false);
             panel40.PerformLayout();
-            panel41.ResumeLayout(false);
-            panel41.PerformLayout();
-            panel42.ResumeLayout(false);
-            panel42.PerformLayout();
-            panel43.ResumeLayout(false);
-            panel43.PerformLayout();
             tpCar.ResumeLayout(false);
             panel44.ResumeLayout(false);
             panel44.PerformLayout();
             panel45.ResumeLayout(false);
             panel46.ResumeLayout(false);
+            panel53.ResumeLayout(false);
+            panel53.PerformLayout();
+            panel52.ResumeLayout(false);
+            panel52.PerformLayout();
+            panel51.ResumeLayout(false);
+            panel51.PerformLayout();
+            panel50.ResumeLayout(false);
+            panel50.PerformLayout();
             panel47.ResumeLayout(false);
             panel47.PerformLayout();
             panel48.ResumeLayout(false);
@@ -2876,20 +2885,14 @@
             panel49.ResumeLayout(false);
             panel49.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dtgvCar).EndInit();
-            panel50.ResumeLayout(false);
-            panel50.PerformLayout();
-            panel51.ResumeLayout(false);
-            panel51.PerformLayout();
-            panel52.ResumeLayout(false);
-            panel52.PerformLayout();
-            panel53.ResumeLayout(false);
-            panel53.PerformLayout();
             tpNV.ResumeLayout(false);
             panel54.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dtgvNV).EndInit();
             panel55.ResumeLayout(false);
             panel55.PerformLayout();
             panel56.ResumeLayout(false);
+            panel62.ResumeLayout(false);
+            panel62.PerformLayout();
             panel57.ResumeLayout(false);
             panel57.PerformLayout();
             panel58.ResumeLayout(false);
@@ -2900,28 +2903,26 @@
             panel60.PerformLayout();
             panel61.ResumeLayout(false);
             panel61.PerformLayout();
-            panel62.ResumeLayout(false);
-            panel62.PerformLayout();
             tgPT.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dtgvPT).EndInit();
             panel63.ResumeLayout(false);
             panel63.PerformLayout();
             panel64.ResumeLayout(false);
             panel65.ResumeLayout(false);
+            panel71.ResumeLayout(false);
+            panel71.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)nmSLTKPT).EndInit();
+            panel70.ResumeLayout(false);
+            panel70.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)nmGNPT).EndInit();
+            panel69.ResumeLayout(false);
+            panel69.PerformLayout();
             panel66.ResumeLayout(false);
             panel66.PerformLayout();
             panel67.ResumeLayout(false);
             panel67.PerformLayout();
             panel68.ResumeLayout(false);
             panel68.PerformLayout();
-            panel69.ResumeLayout(false);
-            panel69.PerformLayout();
-            panel70.ResumeLayout(false);
-            panel70.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)nmGNPT).EndInit();
-            panel71.ResumeLayout(false);
-            panel71.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)nmSLTKPT).EndInit();
             tgQL.ResumeLayout(false);
             panel72.ResumeLayout(false);
             panel72.PerformLayout();

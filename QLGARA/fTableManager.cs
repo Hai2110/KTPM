@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QLGARA.DAO;
+using QLGARA.DTO;
 
 namespace QLGARA
 {
@@ -25,7 +27,7 @@ namespace QLGARA
             foreach (Calendar item in calendarList)
             {
                 Button btn = new Button() { Width = CalendarDAO.CalendarWidth, Height = CalendarDAO.CalendarHeight };
-                btn.Text = item.Name + Environment.NewLine;
+                btn.Text = item.Thu + Environment.NewLine;
                 flpCal.Controls.Add(btn);
             }
         }

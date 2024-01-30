@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ABCD\\QLGARA\\QLGARA\\QLGARA.csproj": {}
+    "C:\\ABCD\\Clone\\KTPM\\QLGARA\\QLGARA.csproj": {}
   },
   "projects": {
-    "C:\\ABCD\\QLGARA\\QLGARA\\QLGARA.csproj": {
+    "C:\\ABCD\\Clone\\KTPM\\QLGARA\\QLGARA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ABCD\\QLGARA\\QLGARA\\QLGARA.csproj",
+        "projectUniqueName": "C:\\ABCD\\Clone\\KTPM\\QLGARA\\QLGARA.csproj",
         "projectName": "QLGARA",
-        "projectPath": "C:\\ABCD\\QLGARA\\QLGARA\\QLGARA.csproj",
+        "projectPath": "C:\\ABCD\\Clone\\KTPM\\QLGARA\\QLGARA.csproj",
         "packagesPath": "C:\\Users\\dangh\\.nuget\\packages\\",
-        "outputPath": "C:\\ABCD\\QLGARA\\QLGARA\\obj\\",
+        "outputPath": "C:\\ABCD\\Clone\\KTPM\\QLGARA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dangh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

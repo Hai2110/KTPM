@@ -10,24 +10,24 @@ namespace QLGARA.DTO
 {
     public class Calendar
     {
-        public Calendar(int id, string name)
+        public Calendar(int id, string thu)
         {
             this.ID = id;
-            this.Name = name;
+            this.Thu = thu;
         }
 
         public Calendar(DataRow row)
         {
             this.ID = (int)row["id"];
-            this.Name = row["name"].ToString();
+            this.Thu = row["thu"].ToString();
         }
 
-        private string name;
+        private string thu;
 
-        public string Name
+        public string Thu
         {
-            get { return name; }
-            set { name = value; }
+            get { return thu; }
+            set { thu = value; }
         }
 
         private int iD;

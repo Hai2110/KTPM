@@ -4,6 +4,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QLGARA.DTO;
+
 
 namespace QLGARA.DAO
 {
@@ -17,15 +19,16 @@ namespace QLGARA.DAO
             private set { CalendarDAO.instance = value; }
         }
 
-        public static int CalendarWidth = 100;
-        public static int CalendarHeight = 100;
+        public static int CalendarWidth = 250;
+        public static int CalendarHeight = 115;
 
         private CalendarDAO() { }
 
         public List<Calendar> LoadCalendarList()
         {
             List<Calendar> calendarList = new List<Calendar>();
-            DataCalendar data = DataProvider.Instance.ExecuteQuery("...");
+
+            DataTable data = DataProvider.Instance.ExecuteQuery("Exec dbo.USP_GetCalendarList3");
 
             foreach (DataRow item in data.Rows)
             {

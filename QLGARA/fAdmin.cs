@@ -20,9 +20,12 @@ namespace QLGARA
         }
         void LoadSerList()
         {
-            string query = "select * from ...";
 
-            dtgvSer.DataSource = DataProvider.Instance.ExecuteQuery(query);
+        }
+
+        private void dtgvRev_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "Y/v7Fym52b8XVLVnTLhy2fXXBF5E4f06eWsj9LJd3uF9yRLp5wvsSxBvl8iBh6/CqL6R2XodGSRPO0lp8Htdsw==",
+  "dgSpecHash": "2cT7Quwd7ijUOGwiOptljS63QxEmqJWrIQnOheeD6F8uqfRa6veqVx6NIhwqktrQR5qNPU9wiTCH1g8DHrFwTw==",
   "success": true,
-  "projectFilePath": "C:\\ABCD\\QLGARA\\QLGARA\\QLGARA.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\ABCD\\Clone\\KTPM\\QLGARA\\QLGARA.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dangh\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\dangh\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\dangh\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\dangh\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\dangh\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\dangh\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\dangh\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
+    "C:\\Users\\dangh\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\dangh\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

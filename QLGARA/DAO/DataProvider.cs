@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,7 @@ namespace QLGARA.DAO
 
         private DataProvider() { }
 
-        private string connectionSTR = "...";
+        private string connectionSTR = "Data Source=HAIASUS\\MSSQLSERVER01;Initial Catalog=QLGarage;Integrated Security=True;";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
