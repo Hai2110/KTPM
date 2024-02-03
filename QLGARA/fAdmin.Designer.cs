@@ -68,8 +68,11 @@
             txbSearchApp = new TextBox();
             btnSearchApp = new Button();
             panel23 = new Panel();
+            panel83 = new Panel();
+            txbHDApp = new TextBox();
+            label53 = new Label();
             panel30 = new Panel();
-            txbNVApp = new TextBox();
+            txbScheApp = new TextBox();
             label16 = new Label();
             panel29 = new Panel();
             txbHTTTApp = new TextBox();
@@ -80,15 +83,15 @@
             panel27 = new Panel();
             dtpHTApp = new DateTimePicker();
             label13 = new Label();
-            panel26 = new Panel();
-            dtpDApp = new DateTimePicker();
-            label12 = new Label();
             panel24 = new Panel();
             nmApp = new NumericUpDown();
             label10 = new Label();
             panel25 = new Panel();
-            txbSerApp = new TextBox();
+            txbLDHApp = new TextBox();
             label11 = new Label();
+            panel26 = new Panel();
+            dtpDApp = new DateTimePicker();
+            label12 = new Label();
             panel21 = new Panel();
             txbIDApp = new TextBox();
             label9 = new Label();
@@ -103,6 +106,9 @@
             txbSearchSche = new TextBox();
             btnSearchSche = new Button();
             panel14 = new Panel();
+            panel81 = new Panel();
+            txbQLSche = new TextBox();
+            label51 = new Label();
             panel19 = new Panel();
             nmSche = new NumericUpDown();
             label8 = new Label();
@@ -113,7 +119,7 @@
             txbStartSche = new TextBox();
             label4 = new Label();
             panel16 = new Panel();
-            dtpSche = new DateTimePicker();
+            txbDateSche = new TextBox();
             label5 = new Label();
             panel17 = new Panel();
             txbIDSche = new TextBox();
@@ -132,7 +138,7 @@
             dtpXDBill = new DateTimePicker();
             label17 = new Label();
             panel33 = new Panel();
-            nmTCBill = new NumericUpDown();
+            txbTienBill = new TextBox();
             label18 = new Label();
             panel34 = new Panel();
             txbIDBill = new TextBox();
@@ -177,6 +183,9 @@
             btnDeleteCar = new Button();
             btnAddCar = new Button();
             panel46 = new Panel();
+            panel82 = new Panel();
+            txbKHCar = new TextBox();
+            label52 = new Label();
             panel53 = new Panel();
             txbTTCar = new TextBox();
             label32 = new Label();
@@ -223,7 +232,7 @@
             txbDCNV = new TextBox();
             label35 = new Label();
             panel60 = new Panel();
-            dpkNTNSNV = new DateTimePicker();
+            dtpNTNSNV = new DateTimePicker();
             label36 = new Label();
             panel61 = new Panel();
             txbIDNV = new TextBox();
@@ -288,6 +297,9 @@
             label50 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            panel84 = new Panel();
+            dtpNDApp = new DateTimePicker();
+            label54 = new Label();
             tcAdmi.SuspendLayout();
             tpRev.SuspendLayout();
             panel4.SuspendLayout();
@@ -308,20 +320,22 @@
             panel20.SuspendLayout();
             panel22.SuspendLayout();
             panel23.SuspendLayout();
+            panel83.SuspendLayout();
             panel30.SuspendLayout();
             panel29.SuspendLayout();
             panel28.SuspendLayout();
             panel27.SuspendLayout();
-            panel26.SuspendLayout();
             panel24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nmApp).BeginInit();
             panel25.SuspendLayout();
+            panel26.SuspendLayout();
             panel21.SuspendLayout();
             tpSche.SuspendLayout();
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgvSche).BeginInit();
             panel13.SuspendLayout();
             panel14.SuspendLayout();
+            panel81.SuspendLayout();
             panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nmSche).BeginInit();
             panel18.SuspendLayout();
@@ -334,7 +348,6 @@
             panel31.SuspendLayout();
             panel32.SuspendLayout();
             panel33.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)nmTCBill).BeginInit();
             panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgvBill).BeginInit();
             tpCus.SuspendLayout();
@@ -352,6 +365,7 @@
             panel44.SuspendLayout();
             panel45.SuspendLayout();
             panel46.SuspendLayout();
+            panel82.SuspendLayout();
             panel53.SuspendLayout();
             panel52.SuspendLayout();
             panel51.SuspendLayout();
@@ -395,6 +409,7 @@
             panel78.SuspendLayout();
             panel79.SuspendLayout();
             panel80.SuspendLayout();
+            panel84.SuspendLayout();
             SuspendLayout();
             // 
             // tcAdmi
@@ -476,7 +491,6 @@
             dtgvRev.RowHeadersWidth = 51;
             dtgvRev.Size = new Size(796, 433);
             dtgvRev.TabIndex = 1;
-            dtgvRev.CellContentClick += dtgvRev_CellContentClick;
             // 
             // tpSer
             // 
@@ -536,6 +550,7 @@
             btnShowSer.TabIndex = 3;
             btnShowSer.Text = "Xem";
             btnShowSer.UseVisualStyleBackColor = true;
+            btnShowSer.Click += btnShowSer_Click;
             // 
             // btnEditSer
             // 
@@ -585,6 +600,7 @@
             // 
             // nmSerPrice
             // 
+            nmSerPrice.DecimalPlaces = 3;
             nmSerPrice.Location = new Point(84, 26);
             nmSerPrice.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             nmSerPrice.Name = "nmSerPrice";
@@ -713,6 +729,7 @@
             btnShowApp.TabIndex = 3;
             btnShowApp.Text = "Xem";
             btnShowApp.UseVisualStyleBackColor = true;
+            btnShowApp.Click += btnShowApp_Click;
             // 
             // btnEditApp
             // 
@@ -768,11 +785,12 @@
             // 
             // panel23
             // 
+            panel23.Controls.Add(panel84);
+            panel23.Controls.Add(panel83);
             panel23.Controls.Add(panel30);
             panel23.Controls.Add(panel29);
             panel23.Controls.Add(panel28);
             panel23.Controls.Add(panel27);
-            panel23.Controls.Add(panel26);
             panel23.Controls.Add(panel24);
             panel23.Controls.Add(panel25);
             panel23.Controls.Add(panel21);
@@ -781,21 +799,47 @@
             panel23.Size = new Size(362, 418);
             panel23.TabIndex = 5;
             // 
+            // panel83
+            // 
+            panel83.Controls.Add(txbHDApp);
+            panel83.Controls.Add(label53);
+            panel83.Location = new Point(3, 374);
+            panel83.Name = "panel83";
+            panel83.Size = new Size(356, 41);
+            panel83.TabIndex = 8;
+            // 
+            // txbHDApp
+            // 
+            txbHDApp.Location = new Point(142, 3);
+            txbHDApp.Name = "txbHDApp";
+            txbHDApp.Size = new Size(207, 27);
+            txbHDApp.TabIndex = 1;
+            // 
+            // label53
+            // 
+            label53.AutoSize = true;
+            label53.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label53.Location = new Point(5, 11);
+            label53.Name = "label53";
+            label53.Size = new Size(108, 19);
+            label53.TabIndex = 0;
+            label53.Text = "Mã hóa đơn:";
+            // 
             // panel30
             // 
-            panel30.Controls.Add(txbNVApp);
+            panel30.Controls.Add(txbScheApp);
             panel30.Controls.Add(label16);
-            panel30.Location = new Point(4, 355);
+            panel30.Location = new Point(2, 286);
             panel30.Name = "panel30";
             panel30.Size = new Size(356, 41);
             panel30.TabIndex = 7;
             // 
-            // txbNVApp
+            // txbScheApp
             // 
-            txbNVApp.Location = new Point(142, 3);
-            txbNVApp.Name = "txbNVApp";
-            txbNVApp.Size = new Size(207, 27);
-            txbNVApp.TabIndex = 1;
+            txbScheApp.Location = new Point(142, 3);
+            txbScheApp.Name = "txbScheApp";
+            txbScheApp.Size = new Size(207, 27);
+            txbScheApp.TabIndex = 1;
             // 
             // label16
             // 
@@ -803,15 +847,15 @@
             label16.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label16.Location = new Point(5, 11);
             label16.Name = "label16";
-            label16.Size = new Size(93, 19);
+            label16.Size = new Size(69, 19);
             label16.TabIndex = 0;
-            label16.Text = "Nhân viên:";
+            label16.Text = "Mã lịch:";
             // 
             // panel29
             // 
             panel29.Controls.Add(txbHTTTApp);
             panel29.Controls.Add(label15);
-            panel29.Location = new Point(3, 260);
+            panel29.Location = new Point(1, 200);
             panel29.Name = "panel29";
             panel29.Size = new Size(356, 41);
             panel29.TabIndex = 6;
@@ -837,7 +881,7 @@
             // 
             panel28.Controls.Add(txbCarApp);
             panel28.Controls.Add(label14);
-            panel28.Location = new Point(3, 213);
+            panel28.Location = new Point(3, 330);
             panel28.Name = "panel28";
             panel28.Size = new Size(356, 41);
             panel28.TabIndex = 5;
@@ -855,21 +899,22 @@
             label14.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label14.Location = new Point(5, 11);
             label14.Name = "label14";
-            label14.Size = new Size(35, 19);
+            label14.Size = new Size(97, 19);
             label14.TabIndex = 0;
-            label14.Text = "Xe:";
+            label14.Text = "Biển số xe:";
             // 
             // panel27
             // 
             panel27.Controls.Add(dtpHTApp);
             panel27.Controls.Add(label13);
-            panel27.Location = new Point(3, 160);
+            panel27.Location = new Point(1, 150);
             panel27.Name = "panel27";
             panel27.Size = new Size(356, 47);
             panel27.TabIndex = 4;
             // 
             // dtpHTApp
             // 
+            dtpHTApp.Format = DateTimePickerFormat.Custom;
             dtpHTApp.Location = new Point(116, 9);
             dtpHTApp.Name = "dtpHTApp";
             dtpHTApp.Size = new Size(240, 27);
@@ -885,37 +930,11 @@
             label13.TabIndex = 0;
             label13.Text = "Ngày hẹn\r\ntrả:";
             // 
-            // panel26
-            // 
-            panel26.Controls.Add(dtpDApp);
-            panel26.Controls.Add(label12);
-            panel26.Location = new Point(3, 60);
-            panel26.Name = "panel26";
-            panel26.Size = new Size(357, 47);
-            panel26.TabIndex = 3;
-            // 
-            // dtpDApp
-            // 
-            dtpDApp.Location = new Point(116, 6);
-            dtpDApp.Name = "dtpDApp";
-            dtpDApp.Size = new Size(240, 27);
-            dtpDApp.TabIndex = 1;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label12.Location = new Point(7, 14);
-            label12.Name = "label12";
-            label12.Size = new Size(85, 19);
-            label12.TabIndex = 0;
-            label12.Text = "Ngày đặt:";
-            // 
             // panel24
             // 
             panel24.Controls.Add(nmApp);
             panel24.Controls.Add(label10);
-            panel24.Location = new Point(4, 307);
+            panel24.Location = new Point(2, 241);
             panel24.Name = "panel24";
             panel24.Size = new Size(356, 42);
             panel24.TabIndex = 3;
@@ -940,19 +959,20 @@
             // 
             // panel25
             // 
-            panel25.Controls.Add(txbSerApp);
+            panel25.Controls.Add(txbLDHApp);
             panel25.Controls.Add(label11);
-            panel25.Location = new Point(3, 113);
+            panel25.Controls.Add(panel26);
+            panel25.Location = new Point(2, 50);
             panel25.Name = "panel25";
             panel25.Size = new Size(356, 41);
             panel25.TabIndex = 2;
             // 
-            // txbSerApp
+            // txbLDHApp
             // 
-            txbSerApp.Location = new Point(142, 3);
-            txbSerApp.Name = "txbSerApp";
-            txbSerApp.Size = new Size(207, 27);
-            txbSerApp.TabIndex = 1;
+            txbLDHApp.Location = new Point(142, 3);
+            txbLDHApp.Name = "txbLDHApp";
+            txbLDHApp.Size = new Size(207, 27);
+            txbLDHApp.TabIndex = 1;
             // 
             // label11
             // 
@@ -960,15 +980,42 @@
             label11.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label11.Location = new Point(5, 11);
             label11.Name = "label11";
-            label11.Size = new Size(74, 19);
+            label11.Size = new Size(93, 19);
             label11.TabIndex = 0;
-            label11.Text = "Dịch vụ:";
+            label11.Text = "Lý do hẹn:";
+            // 
+            // panel26
+            // 
+            panel26.Controls.Add(dtpDApp);
+            panel26.Controls.Add(label12);
+            panel26.Location = new Point(1, 36);
+            panel26.Name = "panel26";
+            panel26.Size = new Size(357, 47);
+            panel26.TabIndex = 3;
+            // 
+            // dtpDApp
+            // 
+            dtpDApp.Format = DateTimePickerFormat.Custom;
+            dtpDApp.Location = new Point(116, 6);
+            dtpDApp.Name = "dtpDApp";
+            dtpDApp.Size = new Size(240, 27);
+            dtpDApp.TabIndex = 1;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label12.Location = new Point(7, 14);
+            label12.Name = "label12";
+            label12.Size = new Size(85, 19);
+            label12.TabIndex = 0;
+            label12.Text = "Ngày đặt:";
             // 
             // panel21
             // 
             panel21.Controls.Add(txbIDApp);
             panel21.Controls.Add(label9);
-            panel21.Location = new Point(3, 14);
+            panel21.Location = new Point(1, 3);
             panel21.Name = "panel21";
             panel21.Size = new Size(357, 40);
             panel21.TabIndex = 1;
@@ -1024,6 +1071,7 @@
             btnShowSche.TabIndex = 3;
             btnShowSche.Text = "Xem";
             btnShowSche.UseVisualStyleBackColor = true;
+            btnShowSche.Click += btnShowSche_Click;
             // 
             // btnEditSche
             // 
@@ -1088,6 +1136,7 @@
             // 
             // panel14
             // 
+            panel14.Controls.Add(panel81);
             panel14.Controls.Add(panel19);
             panel14.Controls.Add(panel18);
             panel14.Controls.Add(panel15);
@@ -1097,6 +1146,32 @@
             panel14.Name = "panel14";
             panel14.Size = new Size(362, 418);
             panel14.TabIndex = 5;
+            // 
+            // panel81
+            // 
+            panel81.Controls.Add(txbQLSche);
+            panel81.Controls.Add(label51);
+            panel81.Location = new Point(3, 349);
+            panel81.Name = "panel81";
+            panel81.Size = new Size(356, 61);
+            panel81.TabIndex = 6;
+            // 
+            // txbQLSche
+            // 
+            txbQLSche.Location = new Point(137, 22);
+            txbQLSche.Name = "txbQLSche";
+            txbQLSche.Size = new Size(208, 27);
+            txbQLSche.TabIndex = 1;
+            // 
+            // label51
+            // 
+            label51.AutoSize = true;
+            label51.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label51.Location = new Point(17, 25);
+            label51.Name = "label51";
+            label51.Size = new Size(79, 24);
+            label51.TabIndex = 0;
+            label51.Text = "Mã QL:";
             // 
             // panel19
             // 
@@ -1178,19 +1253,20 @@
             // 
             // panel16
             // 
-            panel16.Controls.Add(dtpSche);
+            panel16.Controls.Add(txbDateSche);
             panel16.Controls.Add(label5);
             panel16.Location = new Point(3, 81);
             panel16.Name = "panel16";
             panel16.Size = new Size(356, 61);
             panel16.TabIndex = 2;
             // 
-            // dtpSche
+            // txbDateSche
             // 
-            dtpSche.Location = new Point(138, 22);
-            dtpSche.Name = "dtpSche";
-            dtpSche.Size = new Size(207, 27);
-            dtpSche.TabIndex = 1;
+            txbDateSche.Location = new Point(138, 22);
+            txbDateSche.Name = "txbDateSche";
+            txbDateSche.ReadOnly = true;
+            txbDateSche.Size = new Size(207, 27);
+            txbDateSche.TabIndex = 2;
             // 
             // label5
             // 
@@ -1287,6 +1363,7 @@
             btnShowBill.TabIndex = 3;
             btnShowBill.Text = "Xem";
             btnShowBill.UseVisualStyleBackColor = true;
+            btnShowBill.Click += btnShowBill_Click;
             // 
             // btnEditBill
             // 
@@ -1336,6 +1413,7 @@
             // 
             // dtpXDBill
             // 
+            dtpXDBill.Format = DateTimePickerFormat.Custom;
             dtpXDBill.Location = new Point(108, 17);
             dtpXDBill.Name = "dtpXDBill";
             dtpXDBill.Size = new Size(248, 27);
@@ -1353,20 +1431,20 @@
             // 
             // panel33
             // 
-            panel33.Controls.Add(nmTCBill);
+            panel33.Controls.Add(txbTienBill);
             panel33.Controls.Add(label18);
             panel33.Location = new Point(3, 81);
             panel33.Name = "panel33";
             panel33.Size = new Size(356, 61);
             panel33.TabIndex = 2;
             // 
-            // nmTCBill
+            // txbTienBill
             // 
-            nmTCBill.Location = new Point(216, 22);
-            nmTCBill.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
-            nmTCBill.Name = "nmTCBill";
-            nmTCBill.Size = new Size(129, 27);
-            nmTCBill.TabIndex = 1;
+            txbTienBill.Location = new Point(181, 21);
+            txbTienBill.Name = "txbTienBill";
+            txbTienBill.ReadOnly = true;
+            txbTienBill.Size = new Size(164, 27);
+            txbTienBill.TabIndex = 2;
             // 
             // label18
             // 
@@ -1481,6 +1559,7 @@
             btnShowCus.TabIndex = 3;
             btnShowCus.Text = "Xem";
             btnShowCus.UseVisualStyleBackColor = true;
+            btnShowCus.Click += btnShowCus_Click;
             // 
             // btnEditCus
             // 
@@ -1611,10 +1690,11 @@
             // 
             // dtpNTNSCus
             // 
+            dtpNTNSCus.Format = DateTimePickerFormat.Custom;
             dtpNTNSCus.Location = new Point(104, 22);
             dtpNTNSCus.Name = "dtpNTNSCus";
             dtpNTNSCus.Size = new Size(241, 27);
-            dtpNTNSCus.TabIndex = 1;
+            dtpNTNSCus.TabIndex = 2;
             // 
             // label20
             // 
@@ -1737,6 +1817,7 @@
             btnShowCar.TabIndex = 3;
             btnShowCar.Text = "Xem";
             btnShowCar.UseVisualStyleBackColor = true;
+            btnShowCar.Click += btnShowCar_Click;
             // 
             // btnEditCar
             // 
@@ -1767,6 +1848,7 @@
             // 
             // panel46
             // 
+            panel46.Controls.Add(panel82);
             panel46.Controls.Add(panel53);
             panel46.Controls.Add(panel52);
             panel46.Controls.Add(panel51);
@@ -1779,13 +1861,39 @@
             panel46.Size = new Size(362, 418);
             panel46.TabIndex = 5;
             // 
+            // panel82
+            // 
+            panel82.Controls.Add(txbKHCar);
+            panel82.Controls.Add(label52);
+            panel82.Location = new Point(3, 380);
+            panel82.Name = "panel82";
+            panel82.Size = new Size(356, 46);
+            panel82.TabIndex = 8;
+            // 
+            // txbKHCar
+            // 
+            txbKHCar.Location = new Point(123, 9);
+            txbKHCar.Name = "txbKHCar";
+            txbKHCar.Size = new Size(219, 27);
+            txbKHCar.TabIndex = 2;
+            // 
+            // label52
+            // 
+            label52.AutoSize = true;
+            label52.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label52.Location = new Point(14, 15);
+            label52.Name = "label52";
+            label52.Size = new Size(66, 19);
+            label52.TabIndex = 0;
+            label52.Text = "Mã KH:";
+            // 
             // panel53
             // 
             panel53.Controls.Add(txbTTCar);
             panel53.Controls.Add(label32);
-            panel53.Location = new Point(3, 352);
+            panel53.Location = new Point(3, 329);
             panel53.Name = "panel53";
-            panel53.Size = new Size(356, 49);
+            panel53.Size = new Size(356, 46);
             panel53.TabIndex = 7;
             // 
             // txbTTCar
@@ -1809,9 +1917,9 @@
             // 
             panel52.Controls.Add(txbLSCar);
             panel52.Controls.Add(label31);
-            panel52.Location = new Point(3, 280);
+            panel52.Location = new Point(3, 264);
             panel52.Name = "panel52";
-            panel52.Size = new Size(356, 66);
+            panel52.Size = new Size(356, 59);
             panel52.TabIndex = 6;
             // 
             // txbLSCar
@@ -1835,7 +1943,7 @@
             // 
             panel51.Controls.Add(txbNamSXCar);
             panel51.Controls.Add(label30);
-            panel51.Location = new Point(3, 225);
+            panel51.Location = new Point(3, 209);
             panel51.Name = "panel51";
             panel51.Size = new Size(356, 49);
             panel51.TabIndex = 5;
@@ -1861,7 +1969,7 @@
             // 
             panel50.Controls.Add(txbMauCar);
             panel50.Controls.Add(label29);
-            panel50.Location = new Point(3, 170);
+            panel50.Location = new Point(0, 154);
             panel50.Name = "panel50";
             panel50.Size = new Size(356, 49);
             panel50.TabIndex = 4;
@@ -1887,9 +1995,9 @@
             // 
             panel47.Controls.Add(txbHangCar);
             panel47.Controls.Add(label26);
-            panel47.Location = new Point(3, 115);
+            panel47.Location = new Point(3, 104);
             panel47.Name = "panel47";
-            panel47.Size = new Size(356, 49);
+            panel47.Size = new Size(356, 44);
             panel47.TabIndex = 3;
             // 
             // txbHangCar
@@ -1913,7 +2021,7 @@
             // 
             panel48.Controls.Add(txbNameCar);
             panel48.Controls.Add(label27);
-            panel48.Location = new Point(3, 62);
+            panel48.Location = new Point(3, 51);
             panel48.Name = "panel48";
             panel48.Size = new Size(356, 47);
             panel48.TabIndex = 2;
@@ -1939,7 +2047,7 @@
             // 
             panel49.Controls.Add(txbIDCar);
             panel49.Controls.Add(label28);
-            panel49.Location = new Point(3, 14);
+            panel49.Location = new Point(3, 3);
             panel49.Name = "panel49";
             panel49.Size = new Size(356, 42);
             panel49.TabIndex = 1;
@@ -2004,6 +2112,7 @@
             btnShowSV.TabIndex = 3;
             btnShowSV.Text = "Xem";
             btnShowSV.UseVisualStyleBackColor = true;
+            btnShowSV.Click += btnShowSV_Click;
             // 
             // btnEditNV
             // 
@@ -2185,19 +2294,20 @@
             // 
             // panel60
             // 
-            panel60.Controls.Add(dpkNTNSNV);
+            panel60.Controls.Add(dtpNTNSNV);
             panel60.Controls.Add(label36);
             panel60.Location = new Point(3, 145);
             panel60.Name = "panel60";
             panel60.Size = new Size(356, 61);
             panel60.TabIndex = 8;
             // 
-            // dpkNTNSNV
+            // dtpNTNSNV
             // 
-            dpkNTNSNV.Location = new Point(104, 22);
-            dpkNTNSNV.Name = "dpkNTNSNV";
-            dpkNTNSNV.Size = new Size(241, 27);
-            dpkNTNSNV.TabIndex = 1;
+            dtpNTNSNV.Format = DateTimePickerFormat.Custom;
+            dtpNTNSNV.Location = new Point(104, 22);
+            dtpNTNSNV.Name = "dtpNTNSNV";
+            dtpNTNSNV.Size = new Size(241, 27);
+            dtpNTNSNV.TabIndex = 2;
             // 
             // label36
             // 
@@ -2303,6 +2413,7 @@
             btnShowPT.TabIndex = 3;
             btnShowPT.Text = "Xem";
             btnShowPT.UseVisualStyleBackColor = true;
+            btnShowPT.Click += btnShowPT_Click;
             // 
             // btnEditPT
             // 
@@ -2381,11 +2492,12 @@
             // 
             // nmGNPT
             // 
+            nmGNPT.DecimalPlaces = 3;
             nmGNPT.Location = new Point(125, 22);
-            nmGNPT.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
+            nmGNPT.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             nmGNPT.Name = "nmGNPT";
             nmGNPT.Size = new Size(220, 27);
-            nmGNPT.TabIndex = 2;
+            nmGNPT.TabIndex = 3;
             // 
             // label43
             // 
@@ -2560,6 +2672,7 @@
             btnShowQL.TabIndex = 3;
             btnShowQL.Text = "Xem";
             btnShowQL.UseVisualStyleBackColor = true;
+            btnShowQL.Click += btnShowQL_Click;
             // 
             // btnEditQL
             // 
@@ -2725,6 +2838,7 @@
             // 
             // dtpNTNSQL
             // 
+            dtpNTNSQL.Format = DateTimePickerFormat.Custom;
             dtpNTNSQL.Location = new Point(104, 22);
             dtpNTNSQL.Name = "dtpNTNSQL";
             dtpNTNSQL.Size = new Size(241, 27);
@@ -2767,6 +2881,33 @@
             label50.TabIndex = 0;
             label50.Text = "ID:";
             // 
+            // panel84
+            // 
+            panel84.Controls.Add(dtpNDApp);
+            panel84.Controls.Add(label54);
+            panel84.Location = new Point(0, 97);
+            panel84.Name = "panel84";
+            panel84.Size = new Size(356, 47);
+            panel84.TabIndex = 9;
+            // 
+            // dtpNDApp
+            // 
+            dtpNDApp.Format = DateTimePickerFormat.Custom;
+            dtpNDApp.Location = new Point(116, 9);
+            dtpNDApp.Name = "dtpNDApp";
+            dtpNDApp.Size = new Size(240, 27);
+            dtpNDApp.TabIndex = 1;
+            // 
+            // label54
+            // 
+            label54.AutoSize = true;
+            label54.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label54.Location = new Point(7, 17);
+            label54.Name = "label54";
+            label54.Size = new Size(85, 19);
+            label54.TabIndex = 0;
+            label54.Text = "Ngày đặt:";
+            // 
             // fAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -2800,6 +2941,8 @@
             panel22.ResumeLayout(false);
             panel22.PerformLayout();
             panel23.ResumeLayout(false);
+            panel83.ResumeLayout(false);
+            panel83.PerformLayout();
             panel30.ResumeLayout(false);
             panel30.PerformLayout();
             panel29.ResumeLayout(false);
@@ -2808,13 +2951,13 @@
             panel28.PerformLayout();
             panel27.ResumeLayout(false);
             panel27.PerformLayout();
-            panel26.ResumeLayout(false);
-            panel26.PerformLayout();
             panel24.ResumeLayout(false);
             panel24.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)nmApp).EndInit();
             panel25.ResumeLayout(false);
             panel25.PerformLayout();
+            panel26.ResumeLayout(false);
+            panel26.PerformLayout();
             panel21.ResumeLayout(false);
             panel21.PerformLayout();
             tpSche.ResumeLayout(false);
@@ -2823,6 +2966,8 @@
             panel13.ResumeLayout(false);
             panel13.PerformLayout();
             panel14.ResumeLayout(false);
+            panel81.ResumeLayout(false);
+            panel81.PerformLayout();
             panel19.ResumeLayout(false);
             panel19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)nmSche).EndInit();
@@ -2843,7 +2988,6 @@
             panel32.PerformLayout();
             panel33.ResumeLayout(false);
             panel33.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)nmTCBill).EndInit();
             panel34.ResumeLayout(false);
             panel34.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dtgvBill).EndInit();
@@ -2870,6 +3014,8 @@
             panel44.PerformLayout();
             panel45.ResumeLayout(false);
             panel46.ResumeLayout(false);
+            panel82.ResumeLayout(false);
+            panel82.PerformLayout();
             panel53.ResumeLayout(false);
             panel53.PerformLayout();
             panel52.ResumeLayout(false);
@@ -2941,6 +3087,8 @@
             panel79.PerformLayout();
             panel80.ResumeLayout(false);
             panel80.PerformLayout();
+            panel84.ResumeLayout(false);
+            panel84.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -2998,7 +3146,6 @@
         private Panel panel15;
         private TextBox txbStartSche;
         private Label label4;
-        private DateTimePicker dtpSche;
         private Panel panel19;
         private NumericUpDown nmSche;
         private Label label8;
@@ -3019,7 +3166,7 @@
         private NumericUpDown nmApp;
         private Label label10;
         private Panel panel25;
-        private TextBox txbSerApp;
+        private TextBox txbLDHApp;
         private Label label11;
         private Panel panel21;
         private TextBox txbIDApp;
@@ -3037,7 +3184,7 @@
         private TextBox txbHTTTApp;
         private Label label15;
         private Panel panel30;
-        private TextBox txbNVApp;
+        private TextBox txbScheApp;
         private Label label16;
         private Panel panel1;
         private TextBox txbSearchBill;
@@ -3049,7 +3196,6 @@
         private Button btnAddBill;
         private Panel panel31;
         private Panel panel32;
-        private NumericUpDown nmTCBill;
         private Label label17;
         private Panel panel33;
         private Label label18;
@@ -3086,7 +3232,6 @@
         private Panel panel41;
         private TextBox txbDCCus;
         private Label label23;
-        private DateTimePicker dtpNTNSCus;
         private TabPage tpCar;
         private Panel panel44;
         private TextBox txbSearchCar;
@@ -3143,7 +3288,6 @@
         private TextBox txbDCNV;
         private Label label35;
         private Panel panel60;
-        private DateTimePicker dpkNTNSNV;
         private Label label36;
         private Panel panel61;
         private TextBox txbIDNV;
@@ -3160,7 +3304,6 @@
         private Button btnAddPT;
         private Panel panel65;
         private Panel panel70;
-        private NumericUpDown nmGNPT;
         private Label label43;
         private Panel panel69;
         private TextBox txbNCCPT;
@@ -3176,7 +3319,6 @@
         private Label label41;
         private Panel panel71;
         private Label label44;
-        private NumericUpDown nmSLTKPT;
         private TabPage tgQL;
         private Panel panel72;
         private TextBox txbSearchQL;
@@ -3206,5 +3348,23 @@
         private Panel panel80;
         private TextBox txbIDQL;
         private Label label50;
+        private NumericUpDown nmSLTKPT;
+        private NumericUpDown nmGNPT;
+        private DateTimePicker dtpNTNSCus;
+        private DateTimePicker dtpNTNSNV;
+        private Panel panel81;
+        private TextBox txbQLSche;
+        private Label label51;
+        private TextBox txbDateSche;
+        private TextBox txbTienBill;
+        private Panel panel82;
+        private TextBox txbKHCar;
+        private Label label52;
+        private Panel panel83;
+        private TextBox txbHDApp;
+        private Label label53;
+        private Panel panel84;
+        private DateTimePicker dtpNDApp;
+        private Label label54;
     }
 }

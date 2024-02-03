@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QLGARA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+711f216830595d719113c7e73690e7fd73032ea3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+613ddf0f036d597508b23dfbc2998b9de868d4a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("QLGARA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QLGARA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
